@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+    <title>Home</title>
+  </head>
+  <body class="bg-gray-300 px-3 pb-3 h-screen">
+    <div class="flex h-[99.5%] relative">
+      <nav
+        class="bg-white p-4 rounded-tl-2xl rounded-bl-2xl flex flex-col gap-20"
+      >
+        <div class="flex flex-col items-center justify-center gap-5">
+          <div>
+            <p class="text-3xl">🦋</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+          </div>
+        </div>
+        <div class="mb-auto flex flex-col gap-12 items-center text-gray-500">
+          <div class="bg-blue-700 p-2 text-white rounded-md">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="p-1">
+            <i class="fa-solid fa-newspaper fa-xl"></i>
+          </div>
+          <div class="p-1">
+            <i class="fa-regular fa-newspaper fa-xl"></i>
+          </div>
+          <div class="p-1">
+            <i class="fa-regular fa-user fa-xl"></i>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 text-gray-500">
+          <div class="flex relative">
+            <i class="fa-solid fa-bell fa-xl"></i>
+            <div
+              class="absolute -top-4 left-4 h-[6px] w-[6px] bg-indigo-400 rounded-full"
+            ></div>
+          </div>
+          <div>
+            <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Profile Section -->
+      <section class="py-16 px-[5rem] bg-gray-100">
+        <div class="flex flex-col gap-8">
+          <div class="flex items-center">
+            <div class="mr-6">
+              <img
+                class="w-[80px] h-[80px] rounded-full aspect-square"
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+                alt="profile image"
+              />
+            </div>
+            <div>
+              <p class="text-3xl font-bold">Hi Mike,</p>
+              <p class="text-s">welcome back.</p>
+            </div>
+          </div>
+          <div class="pl-[1rem]">
+            <div class="flex flex-col gap-4">
+              <div>
+                <p class="font-semibold text-xl">Today</p>
+              </div>
+              <div>
+                <p class="font-extrabold text-2xl">$19,892</p>
+                <p class="text-xs">Account Balance</p>
+              </div>
+              <div>
+                <p class="font-bold text-base">$4,000</p>
+                <p class="text-xs">Year-to-Date Contributions</p>
+              </div>
+              <div>
+                <p class="font-bold text-base">$1,892</p>
+                <p class="text-xs">Total Interest</p>
+              </div>
+              <div>
+                <button class="bg-blue-700 py-3 text-white rounded-xl w-[70%]">
+                  I want to
+                  <span class="ml-2"
+                    ><i class="fa-solid fa-caret-down"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pl-[1rem] flex flex-col gap-4">
+            <div>
+              <p class="font-semibold text-base">Recent Transactions</p>
+            </div>
+            <div class="border-b-2 border-gray-200 pb-3">
+              <p class="text-xs">2020-07-01</p>
+              <p class="font-bold text-xs">Withdrawal Transfer to Bank-XX11</p>
+            </div>
+            <div class="border-b-2 border-gray-200 pb-3">
+              <p class="text-xs">2020-07-01</p>
+              <p class="font-bold text-xs">Withdrawal Transfer to Bank-XX11</p>
+            </div>
+            <div class="border-b-2 border-gray-200 pb-3">
+              <p class="text-xs">2020-07-01</p>
+              <p class="font-bold text-xs">Withdrawal Transfer to Bank-XX11</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 px-[3rem] bg-white mr-auto">
+        <div class="flex flex-col gap-6">
+          <div>
+            <p class="font-semibold text-indigo-600">Retirement Income</p>
+            <p class="font-semibold text-xl">Starting Year 2056</p>
+          </div>
+          <div class="flex gap-6 items-center">
+            <div class="flex flex-col gap-1">
+              <p class="font-bold text-xl">$300,000</p>
+              <p class="text-xs">My Goal</p>
+              <p class="border-b-2 border-blue-300 rounded-full"></p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="font-bold text-xl">59%</p>
+              <p class="text-xs">Goal Achieved</p>
+              <p class="border-b-2 border-blue-300 rounded-full"></p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="font-bold text-xl">$300</p>
+              <p class="text-xs">Est. Monthly Income</p>
+              <p class="border-b-2 border-blue-300 rounded-full"></p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="font-semibold text-base">
+              <p>Contributions Overtime</p>
+            </div>
+            <div>
+              <div class="flex gap-6">
+                <div>
+                  <span
+                    class="w-3 h-2 bg-indigo-500 rounded-3xl inline-block"
+                  ></span>
+                  <span class="text-xs">Employer: </span>
+                  <span class="font-bold text-xs">K 73,500</span>
+                </div>
+                <div>
+                  <span
+                    class="w-3 h-2 bg-indigo-700 rounded-3xl inline-block"
+                  ></span>
+                  <span class="text-xs">Employee: </span>
+                  <span class="font-bold text-xs">K 52,500</span>
+                </div>
+                <div>
+                  <span
+                    class="w-3 h-2 bg-blue-500 rounded-3xl inline-block"
+                  ></span>
+                  <span class="text-xs">Total Interest: </span>
+                  <span class="font-bold text-xs">K 244,313</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <canvas id="myChart__lg"></canvas>
+            </div>
+          </div>
+          <div>
+            <p class="font-bold text-sm">How do I compare to my peers?</p>
+            <p class="text-xs">
+              These numbers represent current goal achievement.
+            </p>
+          </div>
+          <div class="text-xs flex gap-10">
+            <div>
+              <div class="py-2 border-b-2 border-b-[#f5f5f5]">
+                <p>
+                  <span class="font-semibold mr-8">Age:</span>Under 30
+                  <span><i class="fa-solid fa-caret-down"></i></span>
+                </p>
+              </div>
+              <div class="py-2 border-b-2 border-b-[#f5f5f5]">
+                <p>
+                  <span class="font-semibold mr-8">Salary:</span>K 20 - K 30
+                  <span><i class="fa-solid fa-caret-down"></i></span>
+                </p>
+              </div>
+              <div class="py-2 border-b-2 border-b-[#f5f5f5]">
+                <p>
+                  <span class="font-semibold mr-8">Gender:</span>Male
+                  <span><i class="fa-solid fa-caret-down"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-1 justify-evenly">
+              <div class="flex flex-col gap-3">
+                <div class="rounded-full progress-bar progress-bar__average">
+                  <progress
+                    class="hidden h-0 w-0"
+                    value="78"
+                    min="0"
+                    max="100"
+                  ></progress>
+                </div>
+                <div>
+                  <p class="text-center font-semibold">Average</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="rounded-full progress-bar progress-bar__top">
+                  <progress
+                    class="hidden h-0 w-0"
+                    value="95"
+                    min="0"
+                    max="100"
+                  ></progress>
+                </div>
+                <div>
+                  <p class="text-center font-semibold">Top</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="rounded-full progress-bar progress-bar__me">
+                  <progress
+                    class="hidden h-0 w-0"
+                    value="59"
+                    min="0"
+                    max="100"
+                  ></progress>
+                </div>
+                <div>
+                  <p class="text-center font-semibold">Me</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-white flex-1 rounded-tr-2xl rounded-br-2xl">
+        <div class="bg-gray-100 py-4 px-5 w-[75%]">
+          <div class="mb-3">
+            <p class="font-bold text-sm">Retirement Strategy</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div>
+              <p class="font-semibold text-xs">Employee Contribution</p>
+              <div class="flex items-center justify-between gap-3">
+                <div class="w-[75%] h-[2px] bg-[#ddd] relative shadow-lg">
+                  <div class="w-[70%] h-[2px] bg-blue-500"></div>
+                  <div
+                    class="absolute w-4 h-4 rounded-full bg-white -top-[8px] right-[30%]"
+                  ></div>
+                </div>
+                <div class="font-semibold bg-white p-1 rounded-lg text-xs">
+                  <span>12</span>
+                  <span>%</span>
+                </div>
+              </div>
+            </div>
+            <div class="border-b-2 pb-3">
+              <p class="font-semibold text-xs">Retirement Age</p>
+              <div class="flex items-center justify-between gap-3">
+                <div class="w-[75%] h-[2px] bg-[#ddd] relative shadow-lg">
+                  <div class="w-[90%] h-[2px] bg-blue-500"></div>
+                  <div
+                    class="absolute w-4 h-4 rounded-full bg-white -top-[8px] right-[10%]"
+                  ></div>
+                </div>
+                <div
+                  class="font-semibold bg-white py-1 px-2 rounded-lg text-xs"
+                >
+                  <span>65</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between font-semibold text-xs">
+              <p>Employer Contribution</p>
+              <span>8.4%</span>
+            </div>
+            <div class="flex justify-between font-semibold text-xs">
+              <p>Interest Rate</p>
+              <span>5%</span>
+            </div>
+            <div>
+              <button
+                class="font-semibold bg-blue-700 text-white w-[100%] py-2 rounded-lg text-xs"
+              >
+                Update
+              </button>
+            </div>
+            <div>
+              <p class="text-xs text-center text-blue-800 font-semibold">
+                View Help Docs >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-7 border-l-2 border-l-indigo-700 pl-4">
+          <div class="flex flex-col gap-[2px]">
+            <p class="text-xs">Are you considering a</p>
+            <p class="text-xs font-semibold">Housing Advance?</p>
+            <p class="text-[10px]">Limited time reduced interest.</p>
+          </div>
+          <div>
+            <p class="text-xs text-blue-800 font-semibold mt-2">Learn more ></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <a
+        href="profile.html"
+        class="absolute bottom-7 right-7 text-xs py-1 px-3 bg-indigo-700 text-white rounded-lg hover:bg-indigo-500 cursor-pointer"
+      >
+        Mobile view
+      </a>
+    </div>
+  </body>
+</html>

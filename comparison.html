@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+    <title>Comparison</title>
+    <style>
+      html {
+        font-size: 85%;
+      }
+    </style>
+  </head>
+  <body class="grid place-items-center h-screen relative bg-[#F7F7F7]">
+    <div class="flex flex-col gap-10 absolute left-[10%]">
+      <div>
+        <a
+          href="profile.html"
+          class="bg-blue-700 py-3 px-5 rounded-lg text-white hover:bg-blue-600"
+          >Profile Tab</a
+        >
+      </div>
+      <div>
+        <a
+          href="retirement.html"
+          class="bg-blue-700 py-3 px-5 rounded-lg text-white hover:bg-blue-600"
+          >Retirement Tab</a
+        >
+      </div>
+      <div>
+        <a
+          href="comparison.html"
+          class="bg-blue-700 py-3 px-5 rounded-lg text-white hover:bg-blue-600"
+          >Comparison Tab</a
+        >
+      </div>
+      <div>
+        <a
+          href="index.html"
+          class="bg-blue-700 py-3 px-5 rounded-lg text-white hover:bg-blue-600"
+          >Desktop View</a
+        >
+      </div>
+    </div>
+    <section class="bg-white w-[400px] rounded-3xl shadow-md">
+      <div class="px-8 py-4 flex flex-col gap-4">
+        <div class="flex justify-end relative">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </div>
+        <div>
+          <p class="font-bold text-xl">How do I compare to my peers?</p>
+          <p class="text-sm">
+            These numbers represent current goal achievement.
+          </p>
+        </div>
+        <div>
+          <div class="py-3 border-b-2 border-b-[#f5f5f5]">
+            <p>
+              <span class="font-semibold mr-8">Age:</span>Under 30
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </p>
+          </div>
+          <div class="py-3 border-b-2 border-b-[#f5f5f5]">
+            <p>
+              <span class="font-semibold mr-8">Salary:</span>K 20 - K 30
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </p>
+          </div>
+          <div class="py-3 border-b-2 border-b-[#f5f5f5]">
+            <p>
+              <span class="font-semibold mr-8">Gender:</span>Male
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-evenly my-3">
+          <div class="flex flex-col gap-3">
+            <div class="rounded-full progress-bar progress-bar__average">
+              <progress
+                class="hidden h-0 w-0"
+                value="78"
+                min="0"
+                max="100"
+              ></progress>
+            </div>
+            <div>
+              <p class="text-center font-semibold">Average</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="rounded-full progress-bar progress-bar__top">
+              <progress
+                class="hidden h-0 w-0"
+                value="95"
+                min="0"
+                max="100"
+              ></progress>
+            </div>
+            <div>
+              <p class="text-center font-semibold">Top</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="rounded-full progress-bar progress-bar__me">
+              <progress
+                class="hidden h-0 w-0"
+                value="59"
+                min="0"
+                max="100"
+              ></progress>
+            </div>
+            <div>
+              <p class="text-center font-semibold">Me</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#F5F5F5] w-[100%] p-8 rounded-t-[2.5rem]">
+        <div>
+          <p class="font-bold text-xl">Retirement Strategy</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div>
+            <p class="font-semibold">Employee Contribution</p>
+            <div class="flex items-center justify-between gap-3">
+              <div class="w-[75%] h-1 bg-[#ddd] relative">
+                <div class="w-[70%] h-1 bg-blue-500"></div>
+                <div
+                  class="absolute w-6 h-6 rounded-full bg-white -top-[10px] right-[30%]"
+                ></div>
+              </div>
+              <div class="font-semibold bg-white p-2 rounded-lg">
+                <span>12</span>
+                <span>%</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="font-semibold">Retirement Age</p>
+            <div class="flex items-center gap-3 justify-between">
+              <div class="w-[75%] h-1 bg-[#ddd] relative">
+                <div class="w-[90%] h-1 bg-blue-500"></div>
+                <div
+                  class="absolute w-6 h-6 rounded-full bg-white -top-[10px] right-[10%]"
+                ></div>
+              </div>
+              <div class="font-semibold bg-white py-2 px-4 rounded-lg">
+                <span>65</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between font-semibold">
+            <p>Employer Contribution</p>
+            <span>8.4%</span>
+          </div>
+          <div class="flex justify-between font-semibold">
+            <p>Interest Rate</p>
+            <span>5%</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          class="font-semibold bg-blue-700 text-white w-[100%] py-4 rounded-b-[1.5rem]"
+        >
+          Update
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
